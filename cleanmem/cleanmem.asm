@@ -15,8 +15,8 @@ Start:
   lda #0      ; A = 0
   ldx #$FF    ; X = #$FF
 MemLoop:
-  sta $0,X    ; Store the value of A inside memory address $0 + X
   dex         ; X--
+  sta $0,X    ; Store the value of A inside memory address $0 + X
   bne MemLoop ; Loop until X is equal to zero (z-flag is set)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
