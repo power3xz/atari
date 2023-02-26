@@ -6,7 +6,9 @@ Start:
   lda #100
 
   ; Add the decimal value 5 to accumalator
+  adc #5
   ; Subtract the decimal value 10 from the accumulator
+  sbc #10
   ; Register A should now contain the decimal 95 (or $5f in hexadecimal)
 
   org $FFFC
