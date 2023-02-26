@@ -15,6 +15,7 @@ Start:
   ; Load A with the decimal vlaue 10
   lda #10
   ; Add to A the value inside RAM address $80
+  clc
   adc $80
   ; Add to A the value inside RAM address $81
   adc $81
